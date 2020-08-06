@@ -7,8 +7,6 @@ node() {
 	catchError {
 		git.checkout { }
 
-		dockerfile.validate { }
-
 		def img = dockerfile.build {
 			name = 'groundnuty/k8s-wait-for'
 		}
