@@ -14,6 +14,7 @@ node() {
 		dockerfile.publish {
 			distribute = true
 			image = img
+			baseTag = false
 		}
 	}
 	
